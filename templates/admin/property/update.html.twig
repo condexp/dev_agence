@@ -1,0 +1,25 @@
+{% extends 'admin/sbadmin.html.twig' %}
+
+{% block title %}Modifier un Bien
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div class="container-fluid px-4">
+			<h1 class="mt-4">Dashboard</h1>
+			<ol class="breadcrumb mb-4">
+				<li class="breadcrumb-item active">Dashboard</li>
+			</ol>
+
+			<div class="example-wrapper">
+				<h1>Modifier une  annonce
+				</h1>
+				{{ form_start(form) }}
+				{{ form_widget(form) }}
+				<button class="btn">{{ button_label|default('Enregistrer') }}</button>
+				{{ form_end(form) }}
+			</div>
+
+		</div>
+	</main>
+{% endblock %}
